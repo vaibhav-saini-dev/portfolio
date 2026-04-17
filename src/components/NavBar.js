@@ -3,6 +3,7 @@ import React from 'react';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
 import { LinkedInIcon, GitHubIcon, LeetCodeIcon, MailIcon } from './Icons';
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
@@ -32,22 +33,38 @@ const NavBar = () => {
                 <CustomLink href="/" title="Home" className="mr-4" />
                 <CustomLink href="/about" title="About" className="mx-4" />
                 <CustomLink href="/projects" title="Projects" className="mx-4" />
-                <CustomLink href="/articles" title="Experience" className="mx-4" />
-                <CustomLink href="/articles" title="Skills" className="ml-4" />
+                {/* <CustomLink href="/articles" title="Experience" className="mx-4" /> */}
+                {/* <CustomLink href="/articles" title="Skills" className="ml-4" /> */}
             </nav>
             <nav className="flex items-center justify-center flex-wrap">
-                <Link href="/" target={"_blank"}>
+                <motion.a href="https://www.linkedin.com/in/vaibhav-saini-coder/" target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mr-3"
+                >
                     <LinkedInIcon />
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a href="https://github.com/vaibhav-saini-dev" target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                >
                     <GitHubIcon />
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a href="https://leetcode.com/u/vaibhavsaini294/" target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{scale:0.9}}
+                    className="w-6 mx-3"
+                >
                     <LeetCodeIcon />
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
+                    whileHover={{ y: -2 }}
+                    whileTap={{scale:0.9}}
+                    className="w-6 ml-3"
+                >
                     <MailIcon />
-                </Link>
+                </motion.a>
             </nav>
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
                 <Logo />
