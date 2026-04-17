@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
+import { LinkedInIcon, GitHubIcon, LeetCodeIcon, MailIcon } from './Icons';
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
@@ -34,12 +35,19 @@ const NavBar = () => {
                 <CustomLink href="/articles" title="Experience" className="mx-4" />
                 <CustomLink href="/articles" title="Skills" className="ml-4" />
             </nav>
-            <nav>
-                <Link href="/" target={"_blank"}>LinkedIn</Link>
-                <Link href="/" target={"_blank"}>GitHub</Link>
-                <Link href="/" target={"_blank"}>LeetCode</Link>
-                <Link href="/" target={"_blank"}>Itch.io</Link>
-                <Link href="/" target={"_blank"}>Email</Link>
+            <nav className="flex items-center justify-center flex-wrap">
+                <Link href="/" target={"_blank"}>
+                    <LinkedInIcon />
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <GitHubIcon />
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <LeetCodeIcon />
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <MailIcon />
+                </Link>
             </nav>
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
                 <Logo />
