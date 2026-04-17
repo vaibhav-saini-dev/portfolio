@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.font-mont {
+  font-family: var(--font-mont), sans-serif;
+}
