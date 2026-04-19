@@ -36,7 +36,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Vaibhav Saini | About Page</title>
+                <title>Portfolio | About</title>
                 <meta name="description" content="About section of my software developer experience and history" />
             </Head>
             <main className="flex w-full flex-col items-center justify-center">
