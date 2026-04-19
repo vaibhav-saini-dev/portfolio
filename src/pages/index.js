@@ -19,15 +19,16 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full gap-16">
             <div className="flex-1 max-w-md">
-              <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded" />
+              <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded-2xl" />
             </div>
             <div className="flex-[1.5] flex flex-col items-start justify-center">
             {/* ! overrides classes. 
                 Example: !text-6xl overrides text-8xl in AnimatedText.js */}
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left"/>
+              <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="!text-6xl !text-left"/>
               <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                I’m a software developer with a strong computer science foundation, experienced in everything from low-level systems programming 
+                in C to full-stack web development and game development. I focus on understanding core concepts so I can quickly adapt, learn new technologies, 
+                and build effective solutions, regardless of the stack.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link href="/dummy.pdf" target={"_blank"}
