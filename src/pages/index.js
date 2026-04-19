@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from "../../public/images/profile/Frieren_Transparent.png"
+// import profilePic from "../../public/images/profile/developer-pic-1.png"
 import Image from 'next/image'
 import AnimatedText from '@/components/AnimatedText'
 
@@ -13,14 +14,15 @@ export default function Home() {
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen'>
         <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
+          <div className="flex items-center justify-between w-full gap-16">
+            <div className="flex-1 max-w-md">
               <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded" />
             </div>
-            <div className="w-1/2">
-              <h1>Turning Vision Into Reality With Code And Design.</h1>
-              <AnimatedText />
-              <p>
+            <div className="flex-[1.5] flex flex-col items-start justify-center">
+            {/* ! overrides classes. 
+                Example: !text-6xl overrides text-8xl in AnimatedText.js */}
+              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left"/>
+              <p className="mt-4 text-lg">
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
                 Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
