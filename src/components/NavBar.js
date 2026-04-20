@@ -4,6 +4,7 @@ import Logo from './Logo';
 import { useRouter } from 'next/router';
 import { LinkedInIcon, GitHubIcon, LeetCodeIcon, MailIcon } from './Icons';
 import { motion } from "framer-motion";
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
@@ -22,6 +23,9 @@ const CustomLink = ({ href, title, className = "" }) => {
     )
 }
 const NavBar = () => {
+
+    const [mode, setMode] = useThemeSwitcher();
+    
     return (
         // Note to self: flex sets the display to use flexbox
         //               items: for vertical alignment
@@ -36,6 +40,7 @@ const NavBar = () => {
                 {/* <CustomLink href="/articles" title="Experience" className="mx-4" /> */}
                 {/* <CustomLink href="/articles" title="Skills" className="ml-4" /> */}
             </nav>
+
             <nav className="flex items-center justify-center flex-wrap">
                 <motion.a href="https://www.linkedin.com/in/vaibhav-saini-coder/" target={"_blank"}
                     whileHover={{ y: -2 }}
@@ -65,7 +70,12 @@ const NavBar = () => {
                 >
                     <MailIcon />
                 </motion.a>
+            
+            <button>
+
+            </button>
             </nav>
+
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
                 <Logo />
             </div>
