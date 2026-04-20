@@ -103,17 +103,44 @@ local currency."
                             />
                         </div>
                         <div className="col-span-6">
-                            Project-2
+                            <Project
+                                type="Featured Project"
+                                title="Crypto Screener Application"
+                                img={project1}
+                                link="/"
+                                github="/"
+                            />
                         </div>
 
                         <div className="col-span-12">
-                            FeaturedProject
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="Crypto Screener Application"
+                                img={project1}
+                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+local currency."
+                                link="/"
+                                github="/"
+                            />
                         </div>
                         <div className="col-span-6">
-                            Project-3
+                            <Project
+                                type="Featured Project"
+                                title="Crypto Screener Application"
+                                img={project1}
+                                link="/"
+                                github="/"
+                            />
                         </div>
                         <div className="col-span-6">
-                            Project-4
+                            <Project
+                                type="Featured Project"
+                                title="Crypto Screener Application"
+                                img={project1}
+                                link="/"
+                                github="/"
+                            />
                         </div>
                     </div>
                 </Layout>
