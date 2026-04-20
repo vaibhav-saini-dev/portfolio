@@ -35,6 +35,9 @@ const Education = () => {
   const { scrollYProgress } = useScroll(
     {
       target: ref,
+      // The scroll line height becomes full when a 6th
+      // education is added.
+      // Should use: ["start end", "end start"] for scalability.
       offset: ["start end", "center start"],
     }
   );
