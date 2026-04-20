@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
-import { LinkedInIcon, GitHubIcon, LeetCodeIcon, MailIcon } from './Icons';
+import { LinkedInIcon, GitHubIcon, LeetCodeIcon, MailIcon, SunIcon, MoonIcon } from './Icons';
 import { motion } from "framer-motion";
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
@@ -25,7 +25,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 const NavBar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
-    
+
     return (
         // Note to self: flex sets the display to use flexbox
         //               items: for vertical alignment
@@ -71,8 +71,15 @@ const NavBar = () => {
                     <MailIcon />
                 </motion.a>
             
-            <button>
-
+            <button
+            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            className="ml-3 flex items-center justify-center rounded-full p-1"
+            >
+                {
+                    mode === "dark" ?
+                    <SunIcon className={"fill-dark"} />
+                    : <MoonIcon className={"fill-dark"} />
+                }
             </button>
             </nav>
 
