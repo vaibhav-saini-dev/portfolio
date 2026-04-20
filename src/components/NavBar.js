@@ -18,7 +18,8 @@ const CustomLink = ({ href, title, className = "" }) => {
             absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full' : 'w-0'}
-            `}>&nbsp;</span>
+            dark:bg-light`}
+            >&nbsp;</span>
         </Link>
     )
 }
@@ -31,7 +32,9 @@ const NavBar = () => {
         //               items: for vertical alignment
         //               justify: for horizontal alignment
         <header
-            className='w-full px-32 py-8 font-medium flex items-center justify-between'
+            className='w-full px-32 py-8 font-medium flex items-center justify-between
+            dark:text-light
+            '
         >
             <nav>
                 <CustomLink href="/" title="Home" className="mr-4" />
@@ -73,12 +76,13 @@ const NavBar = () => {
             
             <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className="ml-3 flex items-center justify-center rounded-full p-1"
+            className={`ml-3 flex items-center justify-center rounded-full p-1
+                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
             >
                 {
                     mode === "dark" ?
-                    <SunIcon className={"fill-dark"} />
-                    : <MoonIcon className={"fill-dark"} />
+                    <MoonIcon className={"fill-dark"} />
+                    : <SunIcon className={"fill-dark"} />
                 }
             </button>
             </nav>
