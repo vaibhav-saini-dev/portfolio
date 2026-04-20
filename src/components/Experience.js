@@ -63,50 +63,32 @@ const Experience = () => {
           className="absolute left-9 top-0 w-1 h-full bg-dark origin-top dark:bg-light" />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position="Software Engineer" company="Google"
-            companyLink="www.google.com"
-            time="2022-Present" address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
+            position="Software Engineer" company="Thunderhouse"
+            companyLink="/"
+            time="2026-Present" address="Boston, MA"
+            work="Building a short-form video application using Ionic React (frontend) and Django REST Framework (backend).
+                  Implementing Firebase authentication for user login and session management.
+                  Developing core features such as video feed, content delivery, and user interactions."
           />
 
           <Details
-            position="Software Engineer" company="Google"
-            companyLink="www.google.com"
-            time="2022-Present" address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
+            position="Teaching Assistant" company="UMass Boston"
+            companyLink="/"
+            time="2025-2026" address="Boston, MA"
+            work="Assisted students with problem-solving and proof techniques in an upper-level Theory of Computation course.
+                  Graded assignments and exams using structured rubrics to ensure consistency and fairness.
+                  Explained complex theoretical concepts during office hours and one-on-one help sessions."
           />
 
           <Details
-            position="Software Engineer" company="Google"
+            position="Website Developer" company="Medford Vocational Technical High School"
             companyLink="www.google.com"
-            time="2022-Present" address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
+            time="2022-2023" address="Boston, MA"
+            work="Provided front-end website development using Finalsite, Canva, and other editing software.
+                  Developed technical solutions required to accommodate specific user-facing assets.
+                  Worked in a team of 3 that made Medford's school district's website.
+                  Created and published website pages, designed and posted news, and communicated with faculty and staff."
           />
-
-          <Details
-            position="Software Engineer" company="Google"
-            companyLink="www.google.com"
-            time="2022-Present" address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
-          />
-
-          <Details
-            position="Software Engineer" company="Google"
-            companyLink="www.google.com"
-            time="2022-Present" address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's
-            search engine, including improving the accuracy and relevance of search results and
-            developing new tools for data analysis and visualization."
-          />
-
         </ul>
       </div>
     </div>
