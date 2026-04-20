@@ -13,9 +13,9 @@ const Logo = () => {
             <MotionLink
                 href="/"
                 className='relative w-16 h-16 flex items-center justify-center
-                rounded-full border border-solid border-dark
-                bg-light text-dark font-bold text-2xl overflow-hidden
-                dark:bg-dark dark:text-light dark:border-light
+                rounded-full border-2 border-solid border-dark
+                bg-amber-100 text-dark font-bold text-2xl overflow-hidden
+                dark:bg-black dark:text-light dark:border-light
                 '
             >
                 <motion.span
