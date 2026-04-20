@@ -1,49 +1,64 @@
-import { useEffect, useState } from 'react'
+"use client"
 
+import React, { useEffect, useState } from 'react'
+
+// Note to self: hooks should start with the "use" keyword
+//               as shown here.
 const useThemeSwitcher = () => {
-  const [mode, setMode] = useState(null);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const storedTheme = window.localStorage.getItem("theme");
+    // Media query to check for user preference
+    const preferDarkQuery = "(prefers-color-scheme: dark)";
+    const [mode, setMode] = useState("");
 
-    const initialTheme = storedTheme
-      ? storedTheme
-      : mediaQuery.matches
-      ? "dark"
-      : "light";
+    useEffect(() => {
 
-    setMode(initialTheme);
+        const mediaQuery = window.matchMedia(preferDarkQuery);
+        const userPref = window.localStorage.getItem("theme");
 
-    const handleChange = (e) => {
-      const savedTheme = window.localStorage.getItem("theme");
+        const handleChange = () => {
+            if (userPref) {
+                console.log("test 1");
+                let check = userPref === "dark" ? "dark" : "light";
+                setMode(check);
 
-      // only follow system if user has not manually picked a theme
-      if (!savedTheme) {
-        setMode(e.matches ? "dark" : "light");
+                if (check === "dark") {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            } else {
+                console.log("test 2");
+                let check = mediaQuery.matches ? "dark" : "light";
+                setMode(check);
+
+                if (check === "dark") {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            }
+        }
+
+        handleChange();
+
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => mediaQuery.removeEventListener("change", handleChange)
+
+    }, [])
+
+    useEffect(() => {
+      if (mode === "dark") {
+        window.localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark");
       }
-    };
+      if (mode === "light") {
+        window.localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove("dark");
+      }
+    }, [mode])
+    
+    return [mode, setMode]
+}
 
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!mode) return;
-
-    if (mode === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-
-    window.localStorage.setItem("theme", mode);
-  }, [mode]);
-
-  return [mode, setMode];
-};
-
-export default useThemeSwitcher;
+export default useThemeSwitcher
