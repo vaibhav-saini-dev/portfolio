@@ -58,14 +58,14 @@ export const LinkedInIcon = ({ className, ...rest }) => (
 );
 
 export const LeetCodeIcon = ({ className, ...rest }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
     width="1em"
     height="1em"
-    viewBox="0 0 94 110.92" 
+    viewBox="0 0 94 110.92"
     {...rest}
     className={`w-full h-auto ${className}`}
->
+  >
     <g fill="none" fillRule="evenodd">
       <path
         fill="#FFA116"
@@ -87,9 +87,9 @@ export const LeetCodeIcon = ({ className, ...rest }) => (
 export const MailIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 512 512"
+    // width="1em"
+    // height="1em"
+    viewBox="-0.03 56.18 512.03 399.63"
     {...rest}
     className={`w-full h-auto ${className}`}
   >
@@ -509,7 +509,7 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
-export const CircularTextNew = ({ className, ...rest}) => (
+export const CircularTextNew = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="auto"

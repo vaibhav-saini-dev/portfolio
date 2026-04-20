@@ -62,14 +62,14 @@ const NavBar = () => {
                 <motion.a href="https://leetcode.com/u/vaibhavsaini294/" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{scale:0.9}}
-                    className="w-6 mx-3"
+                    className="w-6 mx-3 dark:bg-light dark:rounded-full"
                 >
                     <LeetCodeIcon />
                 </motion.a>
                 <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{scale:0.9}}
-                    className="w-6 ml-3"
+                    className="w-6 ml-3 dark:bg-light dark:border-[0.1rem] dark:border-solid dark:border-light"
                 >
                     <MailIcon />
                 </motion.a>
