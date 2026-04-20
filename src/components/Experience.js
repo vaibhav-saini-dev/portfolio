@@ -38,12 +38,13 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Experience = () => {
   const ref = useRef(null);
+
   const { scrollYProgress } = useScroll(
     {
       target: ref,
-      offset: ["start end", "center start"]
+      offset: ["start end", "center start"],
     }
-  )
+  );
 
   return (
     <div className="my-64">

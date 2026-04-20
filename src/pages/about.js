@@ -7,18 +7,20 @@ import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({value}) => {
-    const ref = useRef(null)
+    const ref = useRef(null);
     const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue, { duration: 3000 })
+    const springValue = useSpring(motionValue, { duration: 3000 });
     const isInView = useInView(ref, {once: true});
 
     useEffect(() => {
         if(isInView) {
             motionValue.set(value);
         }
-    }, [isInView, value, motionValue])
+    }, [isInView, value, motionValue]);
+
     useEffect(() => {
       springValue.on("change", (latest) => {
         // toFixed(0) avoids fractions
@@ -28,7 +30,7 @@ const AnimatedNumbers = ({value}) => {
             ref.current.textContent = latest.toFixed(0)
         }
       })
-    }, [springValue, value])
+    }, [springValue, value]);
     
     return <span ref={ref}></span>
 }
@@ -94,6 +96,7 @@ const about = () => {
                     </div>
                     <Skills />
                     <Experience />
+                    <Education />
                 </Layout>
             </main>
         </>
