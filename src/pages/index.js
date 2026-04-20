@@ -19,31 +19,36 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full gap-16">
             <div className="flex-1 max-w-md">
-              <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded-2xl" />
+              <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw,
+                      (max-width: 1200px) 50vw,
+                      50vw"
+              />
             </div>
             <div className="flex-[1.5] flex flex-col items-start justify-center">
-            {/* ! overrides classes. 
+              {/* ! overrides classes. 
                 Example: !text-6xl overrides text-8xl in AnimatedText.js */}
-              <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="!text-6xl !text-left"/>
+              <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="!text-6xl !text-left" />
               <p className="my-4 text-base font-medium">
-                I’m a software developer with a strong computer science foundation, experienced in everything from low-level systems programming 
-                in C to full-stack web development and game development. I focus on understanding core concepts so I can quickly adapt, learn new technologies, 
+                I’m a software developer with a strong computer science foundation, experienced in everything from low-level systems programming
+                in C to full-stack web development and game development. I focus on understanding core concepts so I can quickly adapt, learn new technologies,
                 and build effective solutions, regardless of the stack.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link href="/dummy.pdf" target={"_blank"}
-                className="flex items-center bg-dark text-light p-2.5 px-6
+                  className="flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                 border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
                 hover:dark:border-light
                 "
-                download={true}
-                >Resume <LinkArrow className={"w-6 ml-1"}/>
-                
+                  download={true}
+                >Resume <LinkArrow className={"w-6 ml-1"} />
+
                 </Link>
                 <Link href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
-                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
                 >Contact</Link>
               </div>
             </div>

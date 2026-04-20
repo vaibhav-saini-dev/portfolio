@@ -9,29 +9,29 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 
-const AnimatedNumbers = ({value}) => {
+const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null);
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 });
-    const isInView = useInView(ref, {once: true});
+    const isInView = useInView(ref, { once: true });
 
     useEffect(() => {
-        if(isInView) {
+        if (isInView) {
             motionValue.set(value);
         }
     }, [isInView, value, motionValue]);
 
     useEffect(() => {
-      springValue.on("change", (latest) => {
-        // toFixed(0) avoids fractions
-        // Animates value from 0 to value itself in increments of 1
-        // ref.current checks if ref is mounted
-        if (ref.current && latest.toFixed(0) <= value ) {
-            ref.current.textContent = latest.toFixed(0)
-        }
-      })
+        springValue.on("change", (latest) => {
+            // toFixed(0) avoids fractions
+            // Animates value from 0 to value itself in increments of 1
+            // ref.current checks if ref is mounted
+            if (ref.current && latest.toFixed(0) <= value) {
+                ref.current.textContent = latest.toFixed(0)
+            }
+        })
     }, [springValue, value]);
-    
+
     return <span ref={ref}></span>
 }
 
@@ -71,7 +71,12 @@ const about = () => {
                         bg-light p-8 dark:bg-dark dark:border-light
                         ">
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-4xl bg-dark dark:bg-light" />
-                            <Image src={profilePic} alt="Image of me" className="w-full h-auto rounded-2xl" />
+                            <Image src={profilePic} alt="Image of me" className="w-full h-auto rounded-2xl"
+                                priority
+                                sizes="(max-width: 768px) 100vw,
+                                    (max-width: 1200px) 50vw,
+                                    33vw"
+                            />
                         </div>
                         <div className="col-span-2 flex flex-col items-end justify-between">
                             <div className="flex flex-col items-end justify-center">
