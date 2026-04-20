@@ -1,24 +1,45 @@
 import Link from 'next/link';
 import React from 'react';
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import logoGif from "../../public/gifs/profile/Smug_Frieren.gif";
+import Image from 'next/image';
 
 const MotionLink = motion(Link);
+const FramerImage = motion(Image);
 
 const Logo = () => {
     return (
-        <motion.div className='flex items-center justify-center mt-2'>
-            <MotionLink href="/"
-            className='w-16 h-16 bg-dark text-light flex items-center justify-center
-            rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light
-            '
+        <div className='flex items-center justify-center mt-2'>
+            <MotionLink
+                href="/"
+                className='relative w-16 h-16 flex items-center justify-center
+                rounded-full border border-solid border-dark
+                bg-light text-dark font-bold text-2xl overflow-hidden
+                dark:bg-dark dark:text-light dark:border-light
+                '
+            >
+                <motion.span
+                    className="absolute"
+                    initial={{ opacity: 1 }}
+                    whileHover={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    VS
+                </motion.span>
 
-            whileHover={{
-                backgroundColor:["#121212", "rgba(131,58,180,1)","rgba(253,29,29,1)","rgba(252,176,69,1)","rgba(131,58,180,1)", "#121212"],
-                transition:{duration:1, repeat: Infinity}
-            }}
-            >VS</MotionLink>
-        </motion.div>
-    )
-}
+                <FramerImage
+                    src={logoGif}
+                    alt="logo animation"
+                    fill
+                    className="absolute object-cover"
+                    initial={{ opacity: 0 }}
+                    whileHover={{ opacity: 1, scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 100 }}
+                    // transition={{ duration: 0.3 }}
+                />
+            </MotionLink>
+        </div>
+    );
+};
 
-export default Logo
+export default Logo;
