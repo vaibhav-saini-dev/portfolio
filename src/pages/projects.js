@@ -161,7 +161,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                                 github="https://github.com/vaibhav-saini-dev/CS480-HW3-BONUS"
                             />
                         </div>
-                        <div className="col-span-6 sm:col-span-12">
+                        {/* <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Featured Project"
                                 title="Crypto Screener Application"
@@ -169,7 +169,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                                 link="/"
                                 github="/"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </Layout>
             </main>
