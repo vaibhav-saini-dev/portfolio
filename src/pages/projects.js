@@ -97,61 +97,59 @@ const projects = () => {
             </Head>
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Imagination Trumps Knowledge!"
+                    <AnimatedText text="Built with Purpose"
                         className="mb-16"
                     />
                     {/* gap-24 is the gap between x and y */}
                     <div className="grid grid-cols-12 gap-24">
                         <div className="col-span-12">
                             <FeaturedProject
-                                type="Featured Project"
-                                title="Crypto Screener Application"
+                                type="PWA + Vite React + API"
+                                title="FortniteInfo"
                                 img={project1}
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                                link="/"
-                                github="/"
+                                summary="A progressive web application that can be downloaded on your phone.
+
+Uses live data from the popular video game Fortnite, showcasing current maps and shop items used in the game, alongside any news for the game!"
+                                link="https://fortnite-info.netlify.app/"
+                                github="https://github.com/vaibhav-saini-dev/FortniteInfo"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                type="Featured Project"
-                                title="Crypto Screener Application"
+                                type="Low-level programming"
+                                title="Bash in C"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/vaibhav-saini-dev/bash-in-C"
+                                github="https://github.com/vaibhav-saini-dev/bash-in-C"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                type="Featured Project"
-                                title="Crypto Screener Application"
+                                type="Unity 2D"
+                                title="Shotgun Skrimsli"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
+                                github="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
                             />
                         </div>
 
                         <div className="col-span-12">
                             <FeaturedProject
-                                type="Featured Project"
-                                title="Crypto Screener Application"
+                                type="Vite React + Firebase + ESP32 (coded in C)"
+                                title="Smart Classroom Attendance System"
                                 img={project1}
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                                link="/"
-                                github="/"
+                                summary="A smart classroom attendance system that uses an RFID reader. This was a group project that utilized Vite React for the frontend, Firebase for the backend, and ESP32 for the hardware (coded in C)."
+                                link="https://smart-classroom-attendance-system.netlify.app/"
+                                github="https://github.com/vaibhav-saini-dev/Smart-Classroom-Attendance-System"
                             />
                         </div>
                         <div className="col-span-6">
                             <Project
-                                type="Featured Project"
-                                title="Crypto Screener Application"
+                                type="Website & API"
+                                title="Analyzing Boston Crime Data"
                                 img={project1}
-                                link="/"
-                                github="/"
+                                link="https://vaibhav-saini-dev.github.io/CS480-HW3-BONUS/"
+                                github="https://github.com/vaibhav-saini-dev/CS480-HW3-BONUS"
                             />
                         </div>
                         <div className="col-span-6">
