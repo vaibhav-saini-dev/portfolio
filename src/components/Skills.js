@@ -5,8 +5,8 @@ const Skill = ({ name, x, y }) => {
     return (
         <motion.div className="flex items-center justify-center rounded-full font-semibold bg-dark text-light
                 py-3 px-6 shadow-dark cursor-pointer absolute dark:bg-light dark:text-dark
-                max-lg:py-2 max-lg:px-4 max-md:text-sm max-md:py-1.5 max-md:px-3 xs:bg-transparent xs:dark:bg-transparent
-                xs:text-dark xs:dark:text-light xs:font-bold
+                max-lg:py-2 max-lg:px-4 max-md:text-sm max-md:py-1.5 max-md:px-3 max-xs:bg-transparent max-xs:dark:bg-transparent
+                max-xs:text-dark max-xs:dark:text-light max-xs:font-bold
                 "
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
@@ -24,13 +24,13 @@ const Skills = () => {
         <>
             <h2 className="font-bold text-8xl mt-64 w-full text-center max-md:text-6xl max-md:mt-32">Skills</h2>
             <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
-            max-lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
-            max-lg:bg-circularLightLg lg:dark:bg-circularDarkLg
+            max-lg:h-[80vh] max-sm:h-[60vh] max-xs:h-[50vh]
+            max-lg:bg-circularLightLg max-lg:dark:bg-circularDarkLg
             max-md:bg-circularLightMd max-md:dark:bg-circularDarkMd
-            sm:bg-circularLightSm sm:dark:bg-circularDarkSm
+            max-sm:bg-circularLightSm max-sm:dark:bg-circularDarkSm
             ">
                 <motion.div className="flex items-center justify-center rounded-full font-semibold bg-dark text-light
-                p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark max-lg:p-6 max-md:p-4 xs:text-xs xs:p-2
+                p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark max-lg:p-6 max-md:p-4 max-xs:text-xs max-xs:p-2
                 "
                     whileHover={{ scale: 1.05 }}
                 >
