@@ -46,9 +46,12 @@ module.exports = {
 
         circularDarkSm:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)",
+      },
+      boxShadow: {
+        "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       }
     },
-    
+
   },
   plugins: [],
 }

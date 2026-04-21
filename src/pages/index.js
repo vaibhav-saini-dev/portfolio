@@ -6,7 +6,6 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 import TransitionEffect from '@/components/TransitionEffect'
 export default function Home() {
   return (
@@ -64,9 +63,6 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        {/* <div className="absolute right-8 bottom-8 inline-block w-24 max-md:hidden">
-          <Image src={lightBulb} alt="Cartoon Yellow Lightbulb" className="w-full h-auto" />
-        </div> */}
       </main>
     </>
   )
