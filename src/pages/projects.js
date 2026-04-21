@@ -12,6 +12,7 @@ import bashInC from "../../public/images/projects/bash_in_c.jpg"
 import shotgunSkrimsli from "../../public/images/projects/shotgun_skrimsli.jpg"
 import smartCAS from "../../public/images/projects/smart_classroom_attendance_system.png"
 import analyzeBoston from "../../public/images/projects/analyze_boston_crime.webp"
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
 
@@ -99,9 +100,10 @@ const projects = () => {
     return (
         <>
             <Head>
-                <title>Portfolio | Projects</title>
+                <title>Portfolio | Projects Page</title>
                 <meta name="description" content="A collection of projects demonstrating my various web development, game development, and system experience/skills." />
             </Head>
+            <TransitionEffect />
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text="Built with Purpose"
