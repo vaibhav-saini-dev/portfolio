@@ -46,6 +46,8 @@ This repository is based off the starter code https://github.com/codebucks27/Nex
 ### Resources Used in This Project
 - Fonts from https://fonts.google.com/ <br />
 - Icons from https://iconify.design/ <br />
+- Frieren image in Home Page from Pinterest (https://www.pinterest.com/pin/714665034662975279/)
+- Frieren image in About Page from Pinterest (https://www.pinterest.com/pin/714665034662976350/)
 
 ### External Libraries used in this project:
 
