@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import profilePic from "../../public/images/profile/Frieren_Transparent.png"
-// import profilePic from "../../public/images/profile/developer-pic-1.png"
 import Image from 'next/image'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'

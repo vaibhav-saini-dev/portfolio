@@ -5,7 +5,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import {motion} from "framer-motion";
 import fortniteInfo from "../../public/images/projects/FortniteInfo.png"
 import bashInC from "../../public/images/projects/bash_in_c.jpg"
@@ -51,7 +50,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     <Link href={link} target="_blank"
                         className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                         dark:bg-light dark:text-dark
-                        max-sm:px-4 sm:text-base
+                        max-sm:px-4 max-sm:text-base
                         "
                     > Visit Project </Link>
                 </div>
