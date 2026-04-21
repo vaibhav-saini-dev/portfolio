@@ -49,22 +49,13 @@ const about = () => {
                         <div className="col-span-3 flex flex-col items-start justify-start">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Greetings, I'm Vaibhav Saini. I’m a software developer with a strong computer science foundation, experienced in everything from low-level C
-                                programming and systems projects, 2D & 3D single-player and multiplayer video games, to modern full-stack web development.
+                                I’m Vaibhav Saini, a software developer with a strong computer science foundation, experienced in everything from low-level C programming and systems work to game development and modern full-stack applications.
                             </p>
                             <p className="my-4 font-medium">
-                                I don’t enjoy staying in one lane. Whether it’s web development, game development, or working with new technologies, I focus on understanding
-                                the fundamentals so I can quickly adapt and build in any environment. I may not know every tool upfront, but I know how to quickly and
-                                effectively learn and figure things out.
+                                I focus on understanding fundamentals so I can quickly adapt to new technologies and environments. Whether it’s backend logic or frontend experience, I aim to build solutions that are clean, efficient, and complete.
                             </p>
                             <p className="mb-4 font-medium">
-                                I care about how things work just as much as how they look. From backend logic to frontend experience, I aim to build solutions that are clean, efficient, and complete.
-                                I’m constantly pushing myself to grow, take on new challenges, and become the kind of developer who can turn any idea into a working product (no matter the stack).
-
-                            </p>
-                            <p className="font-medium">
-                                Right now, I’m continuing to sharpen my skills through projects and real-world problem solving, with the goal of becoming a well-rounded
-                                developer who can take an idea and turn it into a finished product.
+                               I’m constantly pushing myself through projects and real-world problem solving, working toward becoming a developer who can take any idea and turn it into a finished product.
                             </p>
                         </div>
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
