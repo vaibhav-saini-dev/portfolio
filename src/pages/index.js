@@ -20,9 +20,10 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className="pt-0 max-md:p-16 max-sm:pt-8">
           {/* gap-16 */}
-          <div className="flex items-center justify-between w-full max-lg:flex-col"> 
+          <div className="flex items-center justify-between w-full max-lg:flex-col gap-16 max-md:gap-8"> 
             {/* className="flex-1 max-w-md" */}
-            <div className="w-1/2 max-md:w-full"> 
+            {/* className="w-1/2 max-md:w-full" */}
+            <div className="flex-1 max-w-md"> 
               <Image src={profilePic} alt="Portfolio Website Main Cover Image" className="w-full h-auto rounded-2xl max-lg:hidden max-md:inline-block max-md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw,
@@ -31,7 +32,8 @@ export default function Home() {
               />
             </div>
             {/* flex-[1.5] flex flex-col items-start justify-center */}
-            <div className="w-1/2 flex flex-col items-center self-center max-lg:w-full max-lg:text-center">
+            {/* w-1/2 flex flex-col items-center self-center max-lg:w-full max-lg:text-center */}
+            <div className="flex-[1.5] flex flex-col items-start justify-center max-lg:w-full max-lg:text-center">
               {/* ! overrides classes. 
                 Example: !text-6xl overrides text-8xl in AnimatedText.js */}
               <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="text-6xl! text-left!
@@ -63,9 +65,9 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 max-md:hidden">
+        {/* <div className="absolute right-8 bottom-8 inline-block w-24 max-md:hidden">
           <Image src={lightBulb} alt="Cartoon Yellow Lightbulb" className="w-full h-auto" />
-        </div>
+        </div> */}
       </main>
     </>
   )

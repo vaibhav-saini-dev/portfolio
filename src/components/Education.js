@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import LiIcon from './LiIcon';
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, gpa, honors}) => {
   const ref = useRef(null);
 
   return (
@@ -25,6 +25,12 @@ const Details = ({ type, time, place, info }) => {
         </span>
         <p className="font-medium w-full max-md:text-sm">
           {info}
+        </p>
+        <p className="font-medium w-full my-3 max-md:text-sm">
+          {gpa}
+        </p>
+        <p className="font-medium w-full max-md:text-sm">
+          {honors}
         </p>
       </motion.div>
     </li>
@@ -62,7 +68,9 @@ const Education = () => {
             time="2023-2026" 
             place="University of Massachusetts Boston"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence. GPA: 3.92/4.0"
+Intelligence."
+            gpa="GPA: 3.92/4.0"
+            honors="Honors: Graduating one year early."
           />
 
         {/* <Details
