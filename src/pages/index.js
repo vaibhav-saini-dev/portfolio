@@ -34,8 +34,8 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               {/* ! overrides classes. 
                 Example: !text-6xl overrides text-8xl in AnimatedText.js */}
-              <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="!text-6xl !text-left
-              xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
+              <AnimatedText text="Building Scalable Software Across Systems, Web, and Games." className="text-6xl! text-left!
+              xl:text-5xl! lg:text-center! lg:text-6xl! md:text-5xl! sm:text-3xl!
               " />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 I’m a software developer with a strong computer science foundation, experienced in everything from low-level systems programming
