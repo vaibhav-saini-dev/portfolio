@@ -7,6 +7,11 @@ import Link from 'next/link'
 import React from 'react'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import {motion} from "framer-motion";
+import fortniteInfo from "../../public/images/projects/FortniteInfo.png"
+import bashInC from "../../public/images/projects/bash_in_c.jpg"
+import shotgunSkrimsli from "../../public/images/projects/shotgun_skrimsli.jpg"
+import smartCAS from "../../public/images/projects/smart_classroom_attendance_system.png"
+import analyzeBoston from "../../public/images/projects/analyze_boston_crime.webp"
 
 const FramerImage = motion(Image);
 
@@ -106,7 +111,7 @@ const projects = () => {
                             <FeaturedProject
                                 type="PWA + Vite React + API"
                                 title="FortniteInfo"
-                                img={project1}
+                                img={fortniteInfo}
                                 summary="A progressive web application that can be downloaded on your phone.
 
 Uses live data from the popular video game Fortnite, showcasing current maps and shop items used in the game, alongside any news for the game!"
@@ -118,7 +123,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                             <Project
                                 type="Low-level programming"
                                 title="Bash in C"
-                                img={project1}
+                                img={bashInC}
                                 link="https://github.com/vaibhav-saini-dev/bash-in-C"
                                 github="https://github.com/vaibhav-saini-dev/bash-in-C"
                             />
@@ -127,7 +132,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                             <Project
                                 type="Unity 2D"
                                 title="Shotgun Skrimsli"
-                                img={project1}
+                                img={shotgunSkrimsli}
                                 link="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
                                 github="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
                             />
@@ -137,7 +142,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                             <FeaturedProject
                                 type="Vite React + Firebase + ESP32 (coded in C)"
                                 title="Smart Classroom Attendance System"
-                                img={project1}
+                                img={smartCAS}
                                 summary="A smart classroom attendance system that uses an RFID reader. This was a group project that utilized Vite React for the frontend, Firebase for the backend, and ESP32 for the hardware (coded in C)."
                                 link="https://smart-classroom-attendance-system.netlify.app/"
                                 github="https://github.com/vaibhav-saini-dev/Smart-Classroom-Attendance-System"
@@ -147,7 +152,7 @@ Uses live data from the popular video game Fortnite, showcasing current maps and
                             <Project
                                 type="Website & API"
                                 title="Analyzing Boston Crime Data"
-                                img={project1}
+                                img={analyzeBoston}
                                 link="https://vaibhav-saini-dev.github.io/CS480-HW3-BONUS/"
                                 github="https://github.com/vaibhav-saini-dev/CS480-HW3-BONUS"
                             />
