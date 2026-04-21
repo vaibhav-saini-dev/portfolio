@@ -39,7 +39,8 @@ cd portfolio
 npm install
 
 npm run dev
-
+```
+## 📜 Credits
 This repository is based off the starter code https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code made by codebucks27 <br />
 
 ### Resources Used in This Project
@@ -51,5 +52,3 @@ This repository is based off the starter code https://github.com/codebucks27/Nex
 
 - [framer-motion](https://www.framer.com/motion/) <br />
 - [Tailwind css](https://tailwindcss.com/) <br />
-
-
