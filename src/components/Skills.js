@@ -34,7 +34,7 @@ const Skills = () => {
                 "
                     whileHover={{ scale: 1.05 }}
                 >
-                    Web Development
+                    Web
                 </motion.div>
                 {/* <Skill name="Web Development" x="0vw" y="0vw" /> */}
                 <Skill name="HTML & CSS" x="-20vw" y="2vw" />
@@ -42,7 +42,7 @@ const Skills = () => {
                 <Skill name="ReactJS" x="20vw" y="6vw" />
                 <Skill name="NextJS" x="0vw" y="12vw" />
                 <Skill name="Unity" x="-20vw" y="-15vw" />
-                <Skill name="Game Development" x="15vw" y="-12vw" />
+                <Skill name="Game Dev" x="15vw" y="-12vw" />
                 <Skill name="Python" x="32vw" y="-5vw" />
                 <Skill name="Java" x="0vw" y="-20vw" />
                 <Skill name="C" x="-25vw" y="18vw" />

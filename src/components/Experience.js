@@ -53,7 +53,7 @@ const Experience = () => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center max-md:text-6xl max-xs:text-4xl max-md:mb-16">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center max-md:text-6xl max-sm:text-[3rem] max-xs:text-4xl max-md:mb-16">
         Experience
       </h2>
 
@@ -65,7 +65,7 @@ const Experience = () => {
           " />
         <ul className="w-full flex flex-col items-start justify-between ml-4 max-xs:ml-2">
           <Details
-            position="Software Engineer" company="Thunderhouse"
+            position="Software Dev" company="Thunderhouse"
             companyLink="/"
             time="2026-Present" address="Boston, MA"
             work="Building a short-form video application using Ionic React (frontend) and Django REST Framework (backend).

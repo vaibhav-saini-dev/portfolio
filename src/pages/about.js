@@ -46,7 +46,8 @@ const about = () => {
             <TransitionEffect />
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Background & Experience" className="mb-16 max-lg:text-7xl! max-sm:text-6xl! max-xs:text-4xl! max-sm:mb-8" />
+                    <AnimatedText text="Background & Experience" className="mb-16 text-8xl 
+                            max-lg:text-7xl max-md:text-6xl max-sm:text-5xl max-xs:text-3xl max-sm:mb-8" />
                     <div className="grid w-full grid-cols-8 gap-16 max-sm:gap-8">
                         <div className="col-span-3 flex flex-col items-start justify-start max-xl:col-span-4 max-md:order-2 max-md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
