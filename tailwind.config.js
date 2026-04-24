@@ -14,13 +14,66 @@ module.exports = {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
       colors: {
-        dark: "#1b1b1b",
-        light: "#f5f5f5",
-        primary: "#B63E96",
-        primaryDark: "#58E6D9",
+        // I like this one
+        // dark: "#9381ff",
+        // light: "#f8f7ff",
+        // primary: "#b8b8ff",
+        // primaryDark: "#ffd8be",
+
+        // I like this one
+        // dark: "#861657",
+        // light: "#ddfff7",
+        // primary: "#93e1d8",
+        // primaryDark: "#ffa69e",
+
+        // Light & Dark Blue Themed
+        // dark: "#0f172a",
+        // light: "#f8fafc",
+        // primary: "#7c9cff",
+        // primaryDark: "#c4b5fd"
+
+        // Light & Dark Pink Themed
+        // dark: "#1a1a1a",
+        // light: "#fff1f2",
+        // primary: "#fb7185",
+        // primaryDark: "#f43f5e"
+
+        // Light & Dark Blue Themed
+        // dark: "#0b0f19",
+        // light: "#f1f5f9",
+        // primary: "#38bdf8",
+        // primaryDark: "#818cf8"
+
+        // I really like this one
+        dark: "#1e293b",
+        light: "#e2e8f0",
+        primary: "#818cf8",
+        primaryDark: "#c4b5fd"
+
+        // I really like this one
+        // Light & Dark Purple Themed
+        // dark: "#13111c",
+        // light: "#e9e7ff",
+        // primary: "#8b5cf6",
+        // primaryDark: "#a78bfa"
+
+        // I really like this one
+        // Light & Dark Pink Themed
+        // dark: "#2a1a1f",
+        // light: "#fde8e8",
+        // primary: "#fb7185",
+        // primaryDark: "#fda4af"
+
+        // I really like this one
+        // Light & Dark Blue Themed
+        // dark: "#0f1e25",
+        // light: "#dbeafe",
+        // primary: "#38bdf8",
+        // primaryDark: "#67e8f9"
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
       },
       backgroundImage: {
         circularLight:
@@ -49,7 +102,26 @@ module.exports = {
       },
       boxShadow: {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
-      }
+      },
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }
+        }
+      },
     },
 
   },
