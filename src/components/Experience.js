@@ -79,7 +79,17 @@ const Experience = () => {
             companyLink=""
             time="2026-Present"
             address="Boston, MA"
-            work="Building a short-form video application using Ionic React (frontend) and Django REST Framework (backend). Implementing Firebase authentication for user login and session management. Developing core features such as video feed, content delivery, and user interactions."
+            work=
+            {
+              <>
+                Building a short-form video application using <span className="text-primary dark:text-primaryDark">Ionic React (frontend)</span> and 
+                <span className="text-primary dark:text-primaryDark"> Django REST Framework (backend)</span>. Implementing 
+                <span className="text-primary dark:text-primaryDark"> Firebase authentication</span> for 
+                <span className="text-primary dark:text-primaryDark"> user login </span>
+                and 
+                <span className="text-primary dark:text-primaryDark"> session management</span>. Developing core features such as video feed, content delivery, and user interactions.
+              </>
+            }
           />
 
           <Details
@@ -88,7 +98,17 @@ const Experience = () => {
             companyLink="https://www.umb.edu/"
             time="2025-2026"
             address="Boston, MA"
-            work="Assisted students with problem-solving and proof techniques in an upper-level Theory of Computation course. Graded assignments and exams using structured rubrics to ensure consistency and fairness. Explained complex theoretical concepts during office hours and one-on-one help sessions."
+            work={
+              <>
+                Assisted students with <span className="text-primary dark:text-primaryDark">problem-solving</span> and 
+                <span className="text-primary dark:text-primaryDark"> proof techniques</span> in an 
+                <span className="text-primary dark:text-primaryDark"> upper-level Theory of Computation</span> course. 
+                <span className="text-primary dark:text-primaryDark"> Graded assignments</span> and 
+                <span className="text-primary dark:text-primaryDark"> exams</span> using structured rubrics to 
+                ensure consistency and fairness. 
+                <span className="text-primary dark:text-primaryDark"> Tutored complex theoretical concepts</span> during office hours and one-on-one help sessions.
+              </>
+            }
           />
 
           <Details
@@ -97,7 +117,17 @@ const Experience = () => {
             companyLink="https://mhs-mvths.mps02155.org/cte"
             time="2022-2023"
             address="Boston, MA"
-            work="Provided front-end website development using Finalsite, Canva, and other editing software. Developed technical solutions required to accommodate specific user-facing assets. Worked in a team of 3 that made Medford's school district's website. Created and published website pages, designed and posted news, and communicated with faculty and staff."
+            work={
+              <>
+                Provided <span className="text-primary dark:text-primaryDark">front-end website development </span> using <span className="text-primary dark:text-primaryDark">
+                  Finalsite</span>, <span className="text-primary dark:text-primaryDark">Canva</span>, and other editing software. Developed technical solutions required to
+                accommodate specific user-facing assets. 
+                <span className="text-primary dark:text-primaryDark"> Worked in a team</span> that made Medford's school district's website. 
+                <span className="text-primary dark:text-primaryDark"> Created and published website pages</span>, 
+                <span className="text-primary dark:text-primaryDark"> designed and posted news</span>, and 
+                <span className="text-primary dark:text-primaryDark"> communicated </span>with faculty and staff.
+              </>
+              }
           />
         </ul>
       </div>

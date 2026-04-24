@@ -67,9 +67,25 @@ const Education = () => {
             type="Bachelor Of Science In Computer Science"
             time="2023-2026"
             place="University of Massachusetts Boston"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-            gpa="GPA: 3.92/4.0"
-            honors="Honors: Graduating one year early."
+            info={
+              <>
+                Relevant courses included 
+                <span className="text-primary dark:text-primaryDark"> Data Structures</span> & 
+                <span className="text-primary dark:text-primaryDark"> Algorithms</span>, 
+                <span className="text-primary dark:text-primaryDark"> Computer Systems Engineering</span>, and 
+                <span className="text-primary dark:text-primaryDark"> Artificial Intelligence</span>.
+              </>
+            }
+            gpa={
+              <>
+                <span className="text-primary dark:text-primaryDark">GPA: </span> 3.92/4.0
+              </>
+            }
+            honors={
+              <>
+                <span className="text-primary dark:text-primaryDark">Honors: </span> Graduating one year early.
+              </>
+            }
           />
         </ul>
       </div>
