@@ -34,13 +34,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
     return (
         <button 
-            className={`${className} relative group text-textPrimary dark:text-textPrimary my-2`} 
+            className={`${className} relative group text-textPrimary dark:text-textPrimaryLight my-2`} 
             onClick={handleClick}
         >
             {title}
 
             <span className={`
-            h-px inline-block bg-accentSoft
+            h-px inline-block bg-accentSoft dark:bg-accent
             absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full' : 'w-0'}
@@ -132,7 +132,7 @@ const NavBar = () => {
                     initial={{scale:0, opacity:0}}
                     animate={{scale:1, opacity:1}}
                     className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                    bg-surface/90 dark:bg-surface/90 rounded-lg backdrop-blur-md py-32
+                    bg-surface/90 dark:bg-surfaceLight/90 rounded-lg backdrop-blur-md py-32
                     border border-border"
                     >
                         <nav className="flex items-center flex-col justify-center">
