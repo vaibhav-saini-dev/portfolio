@@ -87,7 +87,8 @@ const Experience = () => {
                 <span className="text-primary dark:text-primaryDark"> Firebase authentication</span> for 
                 <span className="text-primary dark:text-primaryDark"> user login </span>
                 and 
-                <span className="text-primary dark:text-primaryDark"> session management</span>. Developing core features such as video feed, content delivery, and user interactions.
+                <span className="text-primary dark:text-primaryDark"> session management</span>. Developing core features such as video feed, 
+                content delivery, and user interactions.
               </>
             }
           />
@@ -122,7 +123,7 @@ const Experience = () => {
                 Provided <span className="text-primary dark:text-primaryDark">front-end website development </span> using <span className="text-primary dark:text-primaryDark">
                   Finalsite</span>, <span className="text-primary dark:text-primaryDark">Canva</span>, and other editing software. Developed technical solutions required to
                 accommodate specific user-facing assets. 
-                <span className="text-primary dark:text-primaryDark"> Worked in a team</span> that made Medford's school district's website. 
+                <span className="text-primary dark:text-primaryDark"> Worked in a team</span> that made Medford&apos;s school district&apos;s website. 
                 <span className="text-primary dark:text-primaryDark"> Created and published website pages</span>, 
                 <span className="text-primary dark:text-primaryDark"> designed and posted news</span>, and 
                 <span className="text-primary dark:text-primaryDark"> communicated </span>with faculty and staff.
