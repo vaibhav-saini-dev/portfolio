@@ -9,8 +9,7 @@ const Footer = () => {
     bg-backgroundLight text-textPrimaryLight
     dark:bg-background dark:text-textPrimary
     font-medium text-lg max-sm:text-base">
-        <Layout className="py-8 flex items-center justify-between max-lg:flex-col max-lg:py-6">
-            <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
+        <Layout className="py-8 flex items-center justify-center max-lg:flex-col max-lg:py-6">
 
             <div className="flex items-center max-lg:py-2">
                 Built With 
@@ -24,14 +23,6 @@ const Footer = () => {
                   Vaibhav Saini
                 </Link>
             </div>
-
-            <Link 
-              href="mailto:vaibhav.saini.professional@proton.me" 
-              target={"_blank"}
-              className="underline underline-offset-2 text-accent hover:text-accentSoft transition-colors"
-            >
-              Say hello
-            </Link>
         </Layout>
     </footer>
   )

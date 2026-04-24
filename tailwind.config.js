@@ -83,10 +83,6 @@ module.exports = {
         // primary: "#38bdf8",
         // primaryDark: "#67e8f9"
       },
-      animation: {
-        'spin-slow': 'spin 8s linear infinite',
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
-      },
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
@@ -116,23 +112,18 @@ module.exports = {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
       keyframes: {
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          "100%": {
-            width: "100%"
-          }
-        },
         blink: {
-          "50%": {
-            borderColor: "transparent"
+          "0%, 50%": {
+            opacity: "1",
           },
-          "100%": {
-            borderColor: "white"
-          }
-        }
+          "51%, 100%": {
+            opacity: "0",
+          },
+        },
+      },
+      animation: {
+        blink: "blink 0.8s infinite",
+        "spin-slow": "spin 8s linear infinite",
       },
     },
 

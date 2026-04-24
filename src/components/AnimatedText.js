@@ -1,58 +1,61 @@
-import React from 'react'
-import { motion } from "framer-motion"
+import React, { useEffect, useState } from "react";
 
-const quote = {
-    initial: { opacity: 1 },
-    animate: {
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-            staggerChildren: 0.08,
-        }
+const AnimatedText = ({ text, className = "", speed = 50, pause = 1500 }) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let timeout;
+
+    // Typing forwards
+    if (!isDeleting && displayedText.length < text.length) {
+      timeout = setTimeout(() => {
+        setDisplayedText(text.slice(0, displayedText.length + 1));
+      }, speed);
+    } 
+
+    else if (!isDeleting && displayedText.length === text.length) {
+      // Pause at full text
+      timeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, pause);
+    } 
+
+    // Deleting backwards
+    else if (isDeleting && displayedText.length > 0) {
+      timeout = setTimeout(() => {
+        setDisplayedText(text.slice(0, displayedText.length - 1));
+      }, speed / 2);
+    } 
+
+    // Loop
+    else if (isDeleting && displayedText.length === 0) {
+      timeout = setTimeout(() => {
+        setIsDeleting(false);
+      }, 300);
     }
-}
 
-const singleWord = {
-    initial: {
-        opacity: 0,
-        y: 50,
-    },
-    animate: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 1,
-        }
-    }
-}
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, text, speed, pause]);
 
-const AnimatedText = ({ text, className = "" }) => {
   return (
-    <div className="w-full mx-auto py-2 flex items-center justify-center text-center
-    overflow-hidden max-sm:py-0">
-
-        <motion.h1
-        className={`inline-block w-full font-bold capitalize text-8xl 
+    <div
+      className="w-full mx-auto py-2 flex items-center justify-center text-center
+      overflow-hidden max-sm:py-0"
+    >
+      <h1
+        className={`inline-block w-full font-bold capitalize text-8xl
         text-textPrimaryLight dark:text-textPrimary
         ${className}`}
-        variants={quote}
-        initial="initial"
-        animate="animate"
-        >
-            {
-                text.split(" ").map((word, index) => (
-                    <motion.span 
-                      key={word + "-" + index} 
-                      className="inline-block"
-                      variants={singleWord}
-                    >
-                        {word}&nbsp;
-                    </motion.span>
-                ))
-            }
-        </motion.h1>
+      >
+        {displayedText}
+        <span
+          className="inline-block ml-1 h-[1em] border-r-4 border-accent 
+          animate-blink align-[-0.1em]"
+        />
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default AnimatedText
+export default AnimatedText;
