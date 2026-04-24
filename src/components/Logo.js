@@ -15,7 +15,7 @@ const Logo = () => {
                 className='relative w-16 h-16 flex items-center justify-center
                 rounded-full border-2 border-solid
                 border-border dark:border-accentSoft
-                bg-surfaceLight dark:bg-surface
+                bg-backgroundLight dark:bg-background
                 text-textPrimaryLight dark:text-textPrimary
                 font-bold text-2xl overflow-hidden
                 hover:border-border dark:hover:border-accentSoft
