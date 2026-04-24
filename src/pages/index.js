@@ -41,12 +41,10 @@ export default function Home() {
             {/* flex-[1.5] flex flex-col items-start justify-center */}
             {/* w-1/2 flex flex-col items-center self-center max-lg:w-full max-lg:text-center */}
             <div className="flex-[1.5] flex flex-col items-start justify-center max-lg:w-full max-lg:text-center">
-              max-xl:text-5xl! max-lg:text-center! max-lg:text-6xl! max-md:text-5xl! max-sm:text-3xl!
 
               <AnimatedText 
                 text="Building Scalable Software Across Systems, Web, and Games." 
-                className="text-6xl! text-left!
-                max-xl:text-5xl! max-lg:text-center! max-lg:text-6xl! max-md:text-5xl! max-sm:text-3xl!"
+                className="!text-6xl !text-left max-xl:!text-5xl max-lg:!text-center max-lg:!text-6xl max-md:!text-5xl max-sm:!text-3xl"
               />
 
               <p className="my-4 text-base font-medium 
