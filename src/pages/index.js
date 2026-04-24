@@ -55,7 +55,7 @@ export default function Home() {
               <p className="my-4 text-base font-medium 
               text-textSecondaryLight dark:text-textSecondary
               max-md:text-sm max-sm:text-xs">
-                Greetings! I'm <span className="font-bold">Vaibhav Saini</span>, a <span className="text-primary dark:text-primaryDark">software developer </span>
+                Greetings! I&apos;m <span className="font-bold">Vaibhav Saini</span>, a <span className="text-primary dark:text-primaryDark">software developer </span>
                 with a <span className="text-primary dark:text-primaryDark">strong computer science foundation</span>, experienced in everything from 
                 <span className="text-primary dark:text-primaryDark">low-level systems programming in C </span> to 
                 <span className="text-primary dark:text-primaryDark">full-stack web development</span> and <span className="text-primary dark:text-primaryDark">game development</span>. 
