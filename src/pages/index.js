@@ -56,7 +56,9 @@ export default function Home() {
               </p>
 
               <div className="flex items-center self-start mt-2 max-lg:self-center">
-
+                {/* Bouncing Button Animation */}
+                {/* animate-bounce focus:animate-none hover:animate-none
+                  tracking-wide */}
                 <Link 
                   href="/resume.pdf" 
                   target={"_blank"}
@@ -66,8 +68,9 @@ export default function Home() {
                   hover:bg-accentSoft hover:text-dark
                   border-2 border-transparent
                   hover:border-accent
+                  max-md:p-2 max-md:px-4 max-md:text-base
                   transition-all
-                  max-md:p-2 max-md:px-4 max-md:text-base"
+                  "
                   download={true}
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
