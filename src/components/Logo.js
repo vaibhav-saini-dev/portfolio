@@ -13,10 +13,13 @@ const Logo = () => {
             <MotionLink
                 href="/"
                 className='relative w-16 h-16 flex items-center justify-center
-                rounded-full border-2 border-solid border-dark
-                bg-amber-100 text-dark font-bold text-2xl overflow-hidden
-                dark:bg-black dark:text-light dark:border-light
-                '
+                rounded-full border-2 border-solid
+                border-border dark:border-accentSoft
+                bg-surfaceLight dark:bg-surface
+                text-textPrimaryLight dark:text-textPrimary
+                font-bold text-2xl overflow-hidden
+                hover:border-border dark:hover:border-accentSoft
+                transition-colors'
             >
                 <motion.span
                     className="absolute"
@@ -35,7 +38,6 @@ const Logo = () => {
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1, scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 100 }}
-                    // transition={{ duration: 0.3 }}
                 />
             </MotionLink>
         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // Note to self: hooks should start with the "use" keyword
 //               as shown here.
@@ -11,51 +11,51 @@ const useThemeSwitcher = () => {
     const [mode, setMode] = useState("");
 
     useEffect(() => {
-
         const mediaQuery = window.matchMedia(preferDarkQuery);
         const userPref = window.localStorage.getItem("theme");
 
-        const handleChange = () => {
-            if (userPref) {
-                console.log("test 1");
-                let check = userPref === "dark" ? "dark" : "light";
-                setMode(check);
+        const applyTheme = (theme) => {
+            setMode(theme);
 
-                if (check === "dark") {
-                    document.documentElement.classList.add("dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                }
+            if (theme === "dark") {
+                document.documentElement.classList.add("dark");
             } else {
-                console.log("test 2");
-                let check = mediaQuery.matches ? "dark" : "light";
-                setMode(check);
-
-                if (check === "dark") {
-                    document.documentElement.classList.add("dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                }
+                document.documentElement.classList.remove("dark");
             }
         }
 
-        handleChange();
+        if (userPref) {
+            applyTheme(userPref === "dark" ? "dark" : "light");
+        } else {
+            applyTheme(mediaQuery.matches ? "dark" : "light");
+        }
 
-        mediaQuery.addEventListener("change", handleChange);
+        const handleSystemThemeChange = (event) => {
+            const savedTheme = window.localStorage.getItem("theme");
 
-        return () => mediaQuery.removeEventListener("change", handleChange)
+            if (!savedTheme) {
+                applyTheme(event.matches ? "dark" : "light");
+            }
+        }
+
+        mediaQuery.addEventListener("change", handleSystemThemeChange);
+
+        return () => {
+            mediaQuery.removeEventListener("change", handleSystemThemeChange);
+        }
 
     }, [])
 
     useEffect(() => {
-      if (mode === "dark") {
-        window.localStorage.setItem("theme", "dark");
-        document.documentElement.classList.add("dark");
-      }
-      if (mode === "light") {
-        window.localStorage.setItem("theme", "light");
-        document.documentElement.classList.remove("dark");
-      }
+        if (!mode) return;
+
+        window.localStorage.setItem("theme", mode);
+
+        if (mode === "dark") {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
     }, [mode])
     
     return [mode, setMode]

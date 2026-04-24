@@ -11,3 +11,28 @@
 .font-mont {
   font-family: var(--font-mont), sans-serif;
 } */
+
+@theme {
+  --color-dark: #1e293b;
+  --color-light: #e2e8f0;
+  --color-primary: #818cf8;
+  --color-primaryDark: #c4b5fd;
+
+  --color-background: #1e293b;
+  --color-backgroundLight: #e2e8f0;
+
+  --color-surface: #273449;
+  --color-surfaceLight: #cbd5e1;
+
+  --color-textPrimary: #e2e8f0;
+  --color-textPrimaryLight: #1e293b;
+
+  --color-textSecondary: #94a3b8;
+  --color-textSecondaryLight: #475569;
+
+  --color-accent: #818cf8;
+  --color-accentSoft: #c7d2fe;
+
+  --color-border: #334155;
+  --color-borderLight: #94a3b8;
+}

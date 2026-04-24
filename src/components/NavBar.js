@@ -10,15 +10,15 @@ const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
 
     return (
-        <Link href={href} className={`${className} relative group`}>
+        <Link href={href} className={`${className} relative group text-textPrimaryLight dark:text-textPrimary`}>
             {title}
 
             <span className={`
-            h-px inline-block bg-dark
+            h-px inline-block bg-accent
             absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full' : 'w-0'}
-            dark:bg-light`}
+            `}
             >&nbsp;</span>
         </Link>
     );
@@ -33,15 +33,18 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     }
 
     return (
-        <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
+        <button 
+            className={`${className} relative group text-textPrimary dark:text-textPrimary my-2`} 
+            onClick={handleClick}
+        >
             {title}
 
             <span className={`
-            h-px inline-block bg-light
+            h-px inline-block bg-accentSoft
             absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300
             ${router.asPath === href ? 'w-full' : 'w-0'}
-            dark:bg-dark`}
+            `}
             >&nbsp;</span>
         </button>
     );
@@ -57,19 +60,18 @@ const NavBar = () => {
     }
 
     return (
-        // Note to self: flex sets the display to use flexbox
-        //               items: for vertical alignment
-        //               justify: for horizontal alignment
         <header
             className='w-full px-32 py-8 font-medium flex items-center justify-between
-            dark:text-light relative z-10 max-lg:px-16 max-md:px-12 max-sm:px-8
-            '
+            bg-backgroundLight text-textPrimaryLight
+            dark:bg-background dark:text-textPrimary
+            relative z-10 max-lg:px-16 max-md:px-12 max-sm:px-8'
         >
             <button className="flex-col justify-center items-center hidden max-lg:flex" onClick={handleClick}>
-                <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-                <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+                <span className={`bg-textPrimaryLight dark:bg-textPrimary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                <span className={`bg-textPrimaryLight dark:bg-textPrimary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`bg-textPrimaryLight dark:bg-textPrimary block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </button>
+
             <div className="w-full flex justify-between items-center max-lg:hidden">
                 <nav>
                     <CustomLink href="/" title="Home" className="mr-4" />
@@ -85,6 +87,7 @@ const NavBar = () => {
                     >
                         <LinkedInIcon />
                     </motion.a>
+
                     <motion.a href="https://github.com/vaibhav-saini-dev" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -92,6 +95,7 @@ const NavBar = () => {
                     >
                         <GitHubIcon />
                     </motion.a>
+
                     <motion.a href="https://leetcode.com/u/vaibhavsaini294/" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -99,18 +103,19 @@ const NavBar = () => {
                     >
                         <LeetCodeIcon />
                     </motion.a>
+
                     <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
-                        className="w-6 ml-3 dark:bg-light dark:border-[0.1rem] dark:border-solid dark:border-light"
+                        className="w-6 ml-3 bg-light dark:bg-light dark:rounded-sm dark:border dark:border-light"
                     >
                         <MailIcon />
                     </motion.a>
 
                     <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1
-                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                        className="ml-3 flex items-center justify-center rounded-full p-1
+                        bg-accent text-light hover:bg-accentSoft hover:text-dark transition-colors"
                     >
                         {
                             mode === "dark" ?
@@ -127,12 +132,13 @@ const NavBar = () => {
                     initial={{scale:0, opacity:0}}
                     animate={{scale:1, opacity:1}}
                     className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                        bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
-                        ">
+                    bg-surface/90 dark:bg-surface/90 rounded-lg backdrop-blur-md py-32
+                    border border-border"
+                    >
                         <nav className="flex items-center flex-col justify-center">
-                            <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
-                            <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
-                            <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick} />
+                            <CustomMobileLink href="/" title="Home" toggle={handleClick} />
+                            <CustomMobileLink href="/about" title="About" toggle={handleClick} />
+                            <CustomMobileLink href="/projects" title="Projects" toggle={handleClick} />
                         </nav>
 
                         <nav className="flex items-center justify-center flex-wrap mt-2">
@@ -143,32 +149,35 @@ const NavBar = () => {
                             >
                                 <LinkedInIcon />
                             </motion.a>
+
                             <motion.a href="https://github.com/vaibhav-saini-dev" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className="w-6 mx-3 bg-light rounded-full dark:bg-dark max-sm:mx-1"
+                                className="w-6 mx-3 bg-backgroundLight dark:bg-background rounded-full max-sm:mx-1"
                             >
                                 <GitHubIcon />
                             </motion.a>
+
                             <motion.a href="https://leetcode.com/u/vaibhavsaini294/" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className="w-6 mx-3 bg-light rounded-full dark:bg-transparent max-sm:mx-1"
+                                className="w-6 mx-3 bg-backgroundLight rounded-full max-sm:mx-1"
                             >
                                 <LeetCodeIcon />
                             </motion.a>
+
                             <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className="w-6 ml-3 bg-light border-light border-[0.1rem] dark:bg-light dark:border-0 max-sm:mx-1"
+                                className="w-6 ml-3 bg-backgroundLight rounded-sm border border-borderLight max-sm:mx-1"
                             >
                                 <MailIcon />
                             </motion.a>
 
                             <button
                                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                className={`ml-3 flex items-center justify-center rounded-full p-1
-                                    ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                                className="ml-3 flex items-center justify-center rounded-full p-1
+                                bg-accent text-light hover:bg-accentSoft hover:text-dark transition-colors"
                             >
                                 {
                                     mode === "dark" ?
@@ -180,6 +189,7 @@ const NavBar = () => {
                     </motion.div>
                 : null
             }
+
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
                 <Logo />
             </div>

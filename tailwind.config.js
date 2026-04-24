@@ -48,7 +48,19 @@ module.exports = {
         dark: "#1e293b",
         light: "#e2e8f0",
         primary: "#818cf8",
-        primaryDark: "#c4b5fd"
+        primaryDark: "#c4b5fd",
+        // backgroundDark: "#1e293",
+        // backgroundLight: "#e2e8f0",
+        // surfaceDark: "#273449",
+        // surfaceLight: "#cbd5e1",
+        // textPrimaryDark: "#e2e8f0",
+        // textPrimaryLight: "#1e293b",
+        // textSecondaryLight: "#94a3b8",
+        // textSecondaryDark: "#475569",
+        // accent: "#818cf8",
+        // accentSoft: "#c7d2fe",
+        // borderDark: "#334155",
+        // borderLight: "#94a3b8",
 
         // I really like this one
         // Light & Dark Purple Themed
