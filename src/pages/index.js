@@ -55,9 +55,11 @@ export default function Home() {
               <p className="my-4 text-base font-medium 
               text-textSecondaryLight dark:text-textSecondary
               max-md:text-sm max-sm:text-xs">
-                I’m a software developer with a strong computer science foundation, experienced in everything from low-level systems programming
-                in C to full-stack web development and game development. I focus on understanding core concepts so I can quickly adapt, learn new technologies,
-                and build effective solutions, regardless of the stack.
+                Greetings! I'm <span className="font-bold">Vaibhav Saini</span>, a <span className="text-primary dark:text-primaryDark">software developer </span>
+                with a <span className="text-primary dark:text-primaryDark">strong computer science foundation</span>, experienced in everything from 
+                <span className="text-primary dark:text-primaryDark">low-level systems programming in C </span> to 
+                <span className="text-primary dark:text-primaryDark">full-stack web development</span> and <span className="text-primary dark:text-primaryDark">game development</span>. 
+                I focus on understanding core concepts so I can quickly adapt, learn new technologies, and build effective solutions, regardless of the stack.
               </p>
 
               <div className="flex items-center self-start mt-2 max-lg:self-center">

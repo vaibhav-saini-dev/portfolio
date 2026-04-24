@@ -63,11 +63,14 @@ const about = () => {
                             </h2>
 
                             <p className="font-medium">
-                                I’m Vaibhav Saini, a software developer with a strong computer science foundation, experienced in everything from low-level C programming and systems work to game development and modern full-stack applications.
+                                I’m <span className="font-bold">Vaibhav Saini</span>, a <span className="text-primary dark:text-primaryDark">software developer </span> with a <span className="text-primary dark:text-primaryDark">strong computer science foundation</span>
+                                , experienced in everything from <span className="text-primary dark:text-primaryDark">low-level C programming </span> and <span className="text-primary dark:text-primaryDark">systems work </span> 
+                                to <span className="text-primary dark:text-primaryDark">game development </span> and <span className="text-primary dark:text-primaryDark">modern full-stack applications </span>.
                             </p>
 
                             <p className="my-4 font-medium">
-                                I focus on understanding fundamentals so I can quickly adapt to new technologies and environments. Whether it’s backend logic or frontend experience, I aim to build solutions that are clean, efficient, and complete.
+                                I focus on understanding fundamentals so I can quickly adapt to new technologies and environments. Whether it’s <span className="text-primary dark:text-primaryDark">backend logic </span> or 
+                                <span className="text-primary dark:text-primaryDark">frontend experience </span>, I aim to build solutions that are clean, efficient, and complete.
                             </p>
 
                             <p className="mb-4 font-medium">
