@@ -22,6 +22,14 @@ export default function Home() {
       bg-backgroundLight text-textPrimaryLight
       dark:bg-background dark:text-textPrimary'>
 
+        {/* 
+        sizes attribute under priority for profilepic image makes profile picture look small
+        on the iPhone Pro 12 and iPhone 14 Pro Max
+
+         sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                50vw"
+         */}
         <Layout className="pt-0 max-md:p-16 max-sm:pt-8">
           {/* gap-16 */}
           <div className="flex items-center justify-between w-full max-lg:flex-col gap-16 max-md:gap-8"> 
@@ -33,9 +41,6 @@ export default function Home() {
                 alt="Portfolio Website Main Cover Image" 
                 className="w-full h-auto rounded-2xl max-lg:hidden max-md:inline-block max-md:w-full"
                 priority
-                sizes="(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
-                      50vw"
               />
             </div>
             {/* flex-[1.5] flex flex-col items-start justify-center */}
