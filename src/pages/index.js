@@ -57,8 +57,8 @@ export default function Home() {
               max-md:text-sm max-sm:text-xs">
                 Greetings! I&apos;m <span className="font-bold">Vaibhav Saini</span>, a <span className="text-primary dark:text-primaryDark">software developer </span>
                 with a <span className="text-primary dark:text-primaryDark">strong computer science foundation</span>, experienced in everything from 
-                <span className="text-primary dark:text-primaryDark">low-level systems programming in C </span> to 
-                <span className="text-primary dark:text-primaryDark">full-stack web development</span> and <span className="text-primary dark:text-primaryDark">game development</span>. 
+                <span className="text-primary dark:text-primaryDark"> low-level systems programming in C </span> to 
+                <span className="text-primary dark:text-primaryDark"> full-stack web development</span> and <span className="text-primary dark:text-primaryDark">game development</span>. 
                 I focus on understanding core concepts so I can quickly adapt, learn new technologies, and build effective solutions, regardless of the stack.
               </p>
 

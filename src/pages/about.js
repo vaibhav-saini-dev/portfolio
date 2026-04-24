@@ -69,8 +69,9 @@ const about = () => {
                             </p>
 
                             <p className="my-4 font-medium">
-                                I focus on understanding fundamentals so I can quickly adapt to new technologies and environments. Whether it&apos;s <span className="text-primary dark:text-primaryDark">backend logic </span> or 
-                                <span className="text-primary dark:text-primaryDark">frontend experience </span>, I aim to build solutions that are clean, efficient, and complete.
+                                I focus on understanding fundamentals so I can quickly adapt to new technologies and environments. Whether it&apos;s 
+                                <span className="text-primary dark:text-primaryDark"> backend logic </span> or 
+                                <span className="text-primary dark:text-primaryDark"> frontend experience</span>, I aim to build solutions that are clean, efficient, and complete.
                             </p>
 
                             <p className="mb-4 font-medium">
