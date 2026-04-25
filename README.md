@@ -20,7 +20,7 @@ A modern, responsive developer portfolio built with Next.js and Tailwind CSS, sh
 - Custom theming and styling
 
 ## 📸 Preview
-![alt text](image.png)
+![Home Page of my portfolio website.](image.png)
 
 ## 🧠 What I Learned
 - Improved understanding of responsive design (Tailwind breakpoints, layouts)
