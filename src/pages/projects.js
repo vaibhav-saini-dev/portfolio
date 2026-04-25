@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { motion } from "framer-motion";
-import fortniteInfo from "../../public/images/projects/FortniteInfo.png"
+import fortniteInfo from "../../public/images/projects/FortniteInfo_Logo.png"
 import bashInC from "../../public/images/projects/bash_in_c.jpg"
 import shotgunSkrimsli from "../../public/images/projects/shotgun_skrimsli.jpg"
 import smartCAS from "../../public/images/projects/smart_classroom_attendance_system.png"
