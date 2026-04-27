@@ -38,6 +38,7 @@ const Logo = () => {
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1, scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 100 }}
+                    unoptimized
                 />
             </MotionLink>
         </div>

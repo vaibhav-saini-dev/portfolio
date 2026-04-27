@@ -14,29 +14,29 @@ const AnimatedText = ({ text, className = "", speed = 50, pause = 1500 }) => {
       }, speed);
     } 
 
-    else if (!isDeleting && displayedText.length === text.length) {
-      // Pause at full text
-      timeout = setTimeout(() => {
-        setIsDeleting(true);
-      }, pause);
-    } 
+    // else if (!isDeleting && displayedText.length === text.length) {
+    //   // Pause at full text
+    //   timeout = setTimeout(() => {
+    //     setIsDeleting(true);
+    //   }, pause);
+    // } 
 
-    // Deleting backwards
-    else if (isDeleting && displayedText.length > 0) {
-      timeout = setTimeout(() => {
-        setDisplayedText(text.slice(0, displayedText.length - 1));
-      }, speed / 2);
-    } 
+    // // Deleting backwards
+    // else if (isDeleting && displayedText.length > 0) {
+    //   timeout = setTimeout(() => {
+    //     setDisplayedText(text.slice(0, displayedText.length - 1));
+    //   }, speed / 2);
+    // } 
 
-    // Loop
-    else if (isDeleting && displayedText.length === 0) {
-      timeout = setTimeout(() => {
-        setIsDeleting(false);
-      }, 300);
-    }
+    // // Loop
+    // else if (isDeleting && displayedText.length === 0) {
+    //   timeout = setTimeout(() => {
+    //     setIsDeleting(false);
+    //   }, 300);
+    // }
 
     return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, text, speed, pause]);
+  }, [displayedText, text, speed]);
 
   return (
     <div
