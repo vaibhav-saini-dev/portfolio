@@ -84,7 +84,7 @@ export default function Home() {
                 </Link>
 
                 <Link 
-                  href="mailto:vaibhav.saini.professional@proton.me" 
+                  href="mailto:vsaini3940@gmail.com" 
                   target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize 
                   text-accent underline

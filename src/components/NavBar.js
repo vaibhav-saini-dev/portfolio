@@ -104,7 +104,7 @@ const NavBar = () => {
                         <LeetCodeIcon />
                     </motion.a>
 
-                    <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
+                    <motion.a href="mailto:vsaini3940@gmail.com" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 ml-3 bg-light dark:bg-light dark:rounded-sm dark:border dark:border-light"
@@ -166,7 +166,7 @@ const NavBar = () => {
                                 <LeetCodeIcon />
                             </motion.a>
 
-                            <motion.a href="mailto:vaibhav.saini.professional@proton.me" target={"_blank"}
+                            <motion.a href="mailto:vsaini3940@gmail.com" target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className="w-6 ml-3 bg-backgroundLight rounded-sm border border-borderLight max-sm:mx-1"

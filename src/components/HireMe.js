@@ -5,7 +5,7 @@ const HireMe = () => {
   return (
     <div className="fixed left-6 bottom-6 z-20 max-md:left-auto max-md:right-6 max-md:bottom-auto max-md:top-4 max-md:absolute max-sm:right-4 max-sm:top-4">
       <Link
-        href="mailto:vaibhav.saini.professional@proton.me"
+        href="mailto:vsaini3940@gmail.com"
         aria-label="Contact me"
         className="
         group relative flex items-center justify-center
