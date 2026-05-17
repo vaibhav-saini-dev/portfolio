@@ -11,6 +11,7 @@ import bashInC from "../../public/images/projects/bash_in_c.jpg"
 import shotgunSkrimsli from "../../public/images/projects/shotgun_skrimsli.jpg"
 import smartCAS from "../../public/images/projects/smart_classroom_attendance_system.png"
 import analyzeBoston from "../../public/images/projects/analyze_boston_crime.webp"
+import hospital_project from "../../public/images/projects/617_project.png"
 import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
@@ -175,22 +176,22 @@ const projects = () => {
 
                         <div className="col-span-12">
                             <FeaturedProject
-                                type="Vite React + Firebase + ESP32"
-                                title="Smart Classroom Attendance System"
-                                img={smartCAS}
-                                summary="A smart classroom attendance system that uses an RFID reader. This was a group project that utilized Vite React for the frontend, Firebase for the backend, and ESP32 for the hardware coded in C."
-                                link="https://smart-classroom-attendance-system.netlify.app/"
-                                github="https://github.com/vaibhav-saini-dev/Smart-Classroom-Attendance-System"
+                                type="Website + Data + Interactive"
+                                title="Hospital Stay Simulator"
+                                img={hospital_project}
+                                summary="Interactive data storytelling website exploring how behavioral health status affects hospital length of stay in Massachusetts emergency departments using Next.js, Plotly.js, Tailwind CSS, and Framer Motion."
+                                link="https://vaibhav-saini-dev.github.io/cs617-final-project/"
+                                github="https://github.com/vaibhav-saini-dev/cs617-final-project"
                             />
                         </div>
 
                         <div className="col-span-6 max-sm:col-span-12">
                             <Project
-                                type="Website & API"
-                                title="Analyzing Boston Crime Data"
-                                img={analyzeBoston}
-                                link="https://vaibhav-saini-dev.github.io/CS480-HW3-BONUS/"
-                                github="https://github.com/vaibhav-saini-dev/CS480-HW3-BONUS"
+                                type="Vite React + Firebase + ESP32"
+                                title="Smart Classroom Attendance System"
+                                img={smartCAS}
+                                link="https://smart-classroom-attendance-system.netlify.app/"
+                                github="https://github.com/vaibhav-saini-dev/Smart-Classroom-Attendance-System"
                             />
                         </div>
                     </div>
