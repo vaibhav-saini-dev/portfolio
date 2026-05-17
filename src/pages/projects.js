@@ -154,6 +154,17 @@ const projects = () => {
                             />
                         </div>
 
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Website + Data + Interactive"
+                                title="Hospital Stay Simulator"
+                                img={hospital_project}
+                                summary="Interactive data storytelling website exploring how behavioral health status affects hospital length of stay in Massachusetts emergency departments using Next.js, Plotly.js, Tailwind CSS, and Framer Motion."
+                                link="https://vaibhav-saini-dev.github.io/cs617-final-project/"
+                                github="https://github.com/vaibhav-saini-dev/cs617-final-project"
+                            />
+                        </div>
+
                         <div className="col-span-6 max-sm:col-span-12">
                             <Project
                                 type="Low-level programming"
@@ -171,17 +182,6 @@ const projects = () => {
                                 img={shotgunSkrimsli}
                                 link="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
                                 github="https://github.com/vaibhav-saini-dev/Unity2D---Shotgun-Skrimsli"
-                            />
-                        </div>
-
-                        <div className="col-span-12">
-                            <FeaturedProject
-                                type="Website + Data + Interactive"
-                                title="Hospital Stay Simulator"
-                                img={hospital_project}
-                                summary="Interactive data storytelling website exploring how behavioral health status affects hospital length of stay in Massachusetts emergency departments using Next.js, Plotly.js, Tailwind CSS, and Framer Motion."
-                                link="https://vaibhav-saini-dev.github.io/cs617-final-project/"
-                                github="https://github.com/vaibhav-saini-dev/cs617-final-project"
                             />
                         </div>
 
