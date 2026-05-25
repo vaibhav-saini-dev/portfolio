@@ -73,7 +73,7 @@ const Experience = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 max-xs:ml-2">
-          <Details
+          {/* <Details
             position="Software Dev"
             company="Thunderhouse"
             companyLink=""
@@ -91,7 +91,7 @@ const Experience = () => {
                 content delivery, and user interactions.
               </>
             }
-          />
+          /> */}
 
           <Details
             position="Teaching Assistant"
