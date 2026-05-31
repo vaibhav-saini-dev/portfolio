@@ -78,12 +78,12 @@ const Education = () => {
             }
             gpa={
               <>
-                <span className="text-primary dark:text-primaryDark">GPA: </span> 3.92/4.0
+                <span className="text-primary dark:text-primaryDark">GPA: </span> 3.914/4.0
               </>
             }
             honors={
               <>
-                <span className="text-primary dark:text-primaryDark">Honors: </span> Graduating one year early.
+                <span className="text-primary dark:text-primaryDark">Honors: </span> Graduated one year early.
               </>
             }
           />
